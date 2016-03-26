@@ -2,7 +2,7 @@
 This is a simple example using AngularJS (1.5.2) and TypeScript (1.8.9).
 You can see online: [http//www.ricardocanelas.com/lab/angularjs-typescript-sample-app](http//www.ricardocanelas.com/lab/angularjs-typescript-sample-app)
 
-![alt tag](https://github.com/ricardocanelas/angularjs-typescript-sample-app/screen.png)
+![alt tag](https://raw.githubusercontent.com/ricardocanelas/angularjs-typescript-sample-app/master/screen.png)
 
 ## Quick Start
 
@@ -12,10 +12,8 @@ $ cd app
 $ live-server
 ```
 
-
 ## Requirements
 Node, Bower, TypeScript, Typing and Live-Server.
-
 
 ## Installation
 
@@ -51,8 +49,6 @@ $ typings install angular-material --ambient --save
 ```
 
 
-
-
 ## Usage
 
 This command will watching TypeScript files. You can config in *tsconfig.json* file
@@ -61,14 +57,11 @@ $ cd app/src
 $ tsc -w
 ```
 
-
 This command will create a new server, but what change inside this folder will refresh the browser.
 ```
 $ cd app
 $ live-server
 ```
-
-
 
 
 ## License
