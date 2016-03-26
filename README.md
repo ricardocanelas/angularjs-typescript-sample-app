@@ -1,6 +1,6 @@
 ## AngularJS-TypeScript-Sample-App
 This is a simple example using AngularJS (1.5.2) and TypeScript (1.8.9).
-You can see online: [http//www.ricardocanelas.com/lab/angularjs-typescript-sample-app](http//www.ricardocanelas.com/lab/angularjs-typescript-sample-app)
+You can see online: http//www.ricardocanelas.com/lab/angularjs-typescript-sample-app
 
 ![alt tag](https://raw.githubusercontent.com/ricardocanelas/angularjs-typescript-sample-app/master/screen.png)
 
