@@ -1,0 +1,42 @@
+<md-sidenav class="md-sidenav-left md-whiteframe-z2"
+    md-component-id="left"
+    md-is-locked-open="$mdMedia('gt-sm')">
+    <md-toolbar>
+        <h1>Companies</h1>
+    </md-toolbar>
+    
+    <div layout-padding>
+        <md-autocomplete
+            md-search-text="vm.searchText"
+            md-items="item in vm.companies | filter:vm.searchText"
+            md-item-text="item.name"
+            md-min-lenght="3"
+            placeholder="filter">
+            <md-item-template>
+                <span md-highlight-text="vm.searchText"
+                      md-highlight-flags="^i">{{item.name}}</span>
+            </md-item-template>
+            <md-not-found>
+                No company matching "{{vm.searchText}}" were found.
+            </md-not-found>
+        </md-autocomplete>
+    </div>
+    
+    <md-content class="scrollable-nav-content">
+        <md-list>
+            <md-list-item ng-repeat="company in vm.companies | filter:vm.searchText | orderBy:'name'">
+                <md-button ng-click="vm.selectCompany(company)"
+                           ng-class="{'selected': company === vm.selectedCompany }">
+                    <md-icon md-svg-icon="{{company.avatar}}" class="avatar"></md-icon>
+                    {{company.name}}
+                </md-button>
+            </md-list-item>
+        </md-list>
+    </md-content>
+    
+    
+    <md-button class="md-fab md-fab-bottom-right" ng-click="vm.addCompany($event)" aria-label="Add Company">
+        <ng-md-icon icon="add"></ng-md-icon>
+    </md-button>
+    
+</md-sidenav>

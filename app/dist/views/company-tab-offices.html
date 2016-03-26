@@ -1,0 +1,15 @@
+<div ng-include="'dist/views/company-office-form.html'"></div>
+
+<p ng-if="!vm.selectedCompany.offices.length">No office for {{vm.selectedCompany.name}}, yet.</p>
+
+<md-content>
+    <md-card ng-repeat="office in vm.selectedCompany.offices | orderBy:'country'">
+        <md-card-content>
+            <h3>{{office.city}}, {{office.country}}</h3>
+            <p>{{office.address}}</p>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+            <md-button ng-click="vm.removeOffice(office)">Remove</md-button>
+        </md-card-actions>
+    </md-card>
+</md-content>

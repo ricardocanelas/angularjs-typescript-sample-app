@@ -1,0 +1,35 @@
+<md-toolbar>
+    <div class="md-toolbar-tools">
+        <md-button hide-gt-sm aria-label="Toggle side navegation"
+            ng-click="vm.toggleSideNav()"
+            class="md-icon-button">
+            <md-icon md-svg-icon="menu"></md-icon>
+        </md-button>
+        <h1>
+            Company Manager
+        </h1>
+        
+        <md-fab-speed-dial md-direction="down"
+                           class="md-fling md-fab-top-right"
+                           aria-label="Speed dial options">
+            <md-fab-trigger>
+                <md-button class="md-fab" aria-label="Toggle information menu">
+                    <md-icon md-svg-icon="menu"></md-icon>
+                </md-button>
+            </md-fab-trigger>
+            
+            <md-fab-actions>
+                <md-button class="md-fab md-raised md-mini" aria-label="View contact"
+                           ng-click="vm.showContactOptions($event)">
+                    <ng-md-icon icon="account_circle"></ng-md-icon>
+                    <md-tooltip md-direction="left">Contact</md-tooltip>
+                </md-button>
+                <md-button class="md-fab md-raised md-mini" aria-label="Print information of the company"
+                           ng-click="vm.print($event)">
+                    <ng-md-icon icon="print"></ng-md-icon>
+                    <md-tooltip md-direction="left">Print</md-tooltip>
+                </md-button>
+            </md-fab-actions>
+        </md-fab-speed-dial>
+    </div>
+</md-toolbar>

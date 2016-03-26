@@ -1,0 +1,102 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+/* SIDE NAV ***************/
+
+#sidenav h1{
+    font-size: 1.250em;
+    font-weight: 400;
+    margin: auto;
+}
+
+#sidenav .scrollable-nav-content {
+    position: absolute;
+    top: 136px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    overflow: auto;
+}
+
+#sidenav md-autocomplete{
+    background-color: #fff;
+}
+
+#sidenav md-list .md-button {
+    color: inherit;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+}
+    
+#sidenav md-list .md-button.selected {
+    color: #03a9f4;
+}
+
+#sidenav md-sidenav md-list {
+    padding: 0px 0px 8px 0px;
+}
+
+
+/* WRAPPER ***************/
+
+#wrapper h1{
+    text-align: left;
+    font-size: 1.150em;
+    font-weight: 400;
+}
+
+
+/* COMPANY ***************/
+
+#company-content {
+    padding: 5px 34px 10px 34px; 
+}
+
+#company-content .avatar{
+    position: relative;
+    width: 128px;
+    height: 128px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0px 10px 0px -20px;
+    vertical-align: middle;
+    zoom: 0.70;
+    transform: translateZ(0);
+    -webkit-transform: scale(0.70);
+    -moz-transform: scale(0.70);
+}
+
+#company-content #company-title h2{    
+    margin-bottom: 0px;
+}
+
+#company-content #company-title p{    
+    margin-top: 0px;
+    font-size:0.890em;
+}
+
+#company-content md-tab-item.md-active span {
+    color: black;
+}
+
+#company-content md-tabs md-content {
+    padding: 10px 0px 0px 0px;
+}
+
+#company-content #tab-offices-content h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+

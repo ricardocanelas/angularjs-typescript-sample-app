@@ -1,0 +1,21 @@
+<div layout="row">
+<md-icon md-svg-icon="{{vm.selectedCompany.avatar}}" class="avatar"></md-icon>
+    <div id="company-title">
+        <h2 id="company-title-name" flex>{{vm.selectedCompany.name}}</h2>
+        <p id="company-title-founded">Founded in {{ vm.selectedCompany.founded }}
+    </div>
+</div>
+<md-tabs md-dynamic-height=""
+        md-stretch-tabs="always" 
+        md-selected="vm.tabIndex">
+    <md-tab label="Descriptions">
+        <md-content id="tab-description-content">
+            <div ng-include="'dist/views/company-tab-description.html'"></div>
+        </md-content>
+    </md-tab>
+    <md-tab label="Offices">
+        <md-content id='tab-offices-content'>
+            <div ng-include="'dist/views/company-tab-offices.html'"></div>
+        </md-content>
+    </md-tab>
+</md-tabs>

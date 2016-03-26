@@ -1,0 +1,24 @@
+{
+  "name": "sample-angularjs-and-typescript-company-manager",
+  "authors": [
+    "Ricardo Canelas"
+  ],
+  "description": "It's a simple sample using Angularjs 1.5.2 and TypeScript.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "http://www.ricardocanelas.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.2",
+    "angular-material": "^1.0.6",
+    "angular-material-icons": "^0.7.0",
+    "angular-sanitize": "^1.5.2"
+  }
+}

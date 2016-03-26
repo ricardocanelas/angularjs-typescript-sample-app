@@ -1,0 +1,56 @@
+<md-dialog>
+    <form name="companyForm" ng-submit="ctrl.save()">
+        <md-dialog-content>
+            <div layout="column" layout-padding>
+                <div layout-gt-sm="row">
+                    <md-input-container = class="md-block" flex-gt-sm>
+                        <label>Avatar</label>
+                        <md-select ng-model="ctrl.company.avatar" name="avatar" required>
+                            <md-option ng-repeat="avatar in ctrl.avatars" ng-value="avatar">
+                                <md-icon md-svg-icon="{{ avatar }}"></md-icon> {{ avatar }}
+                            </md-option>
+                        </md-select>
+                        <div ng-messages="companyForm.avatar.$error">
+                            <div ng-message="required">This is required.</div>
+                        </div>
+                    </md-input-container>
+                    
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>Company name</label>
+                        <input ng-model="ctrl.company.name" name="name" type="text" required>
+                        <div ng-messages="companyForm.name.$error" ng-if='companyForm.name.$dirty'>
+                            <div ng-message="required">This is required.</div>
+                        </div>
+                    </md-input-container>
+                    
+                    <md-input-container class="md-block" flex-gt-sm>
+                        <label>Founded</label>
+                        <input ng-model="ctrl.company.founded" name="founded" type="number" required>
+                        <div ng-messages="companyForm.founded.$error">
+                            <div ng-message="required">This is required.</div>
+                        </div>
+                    </md-input-container>
+                </div>
+                
+                <md-input-container class="md-block" flex>
+                    <label>Description</label>
+                    <textarea ng-model="ctrl.company.description" rows="5" name="description" required></textarea>
+                    <div ng-messages="companyForm.description.$error">
+                            <div ng-message="required">This is required.</div>
+                        </div>
+                </md-input-container>
+            </div>
+        </md-dialog-content>
+        
+        <md-dialog-actions layout="row">
+            <md-button ng-click="ctrl.cancel()">
+                Cancel
+            </md-button>
+            <md-button type="submit" 
+                       class="md-primary md-raised"
+                       ng-disabled="companyForm.$invalid">
+                Save
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
