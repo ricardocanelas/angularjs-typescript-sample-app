@@ -1,4 +1,5 @@
 ## AngularJS-TypeScript-Sample-App
+
 This is a simple example using AngularJS (1.5.2) and TypeScript (1.8.9).
 You can see online: http//www.ricardocanelas.com/lab/angularjs-typescript-sample-app
 
@@ -33,15 +34,16 @@ Node, Bower, TypeScript, Typing and Live-Server.
 - Install Live-Server
 	- Type `npm install -g live-server`
 
-<br />
-##### Install packages of the Bower.
+
+#### Install packages of the Bower.
+
 This command will install: Angular, Angular-Material and others packages, you can see more details in *bower.json* file.
+
 ```
 $ bower install
 ```
 
-<br/>
-##### Install TypeScript definitions.
+#### Install TypeScript definitions.
 
 ```
 $ typings install angular --ambient --save
